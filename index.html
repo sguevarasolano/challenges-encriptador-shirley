@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="principal-section">
+            <header>
+                <img src="assets/logo-Alura.png" alt="Logo de Alura" height="48" width="auto">
+            </header>
+            <form action="submit">
+                <div class="text">
+                    <textarea name="textarea" id="textarea" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="note">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2" />
+                    </svg>
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="primary" onclick="encryptText()">Encriptar</button>
+                    <button type="button" class="secondary" onclick="decryptText()">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+        <section class="secondary-section">
+            <img src="assets/Muñeco.svg" alt="Ilustración">
+            <section class="section-message">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section>
+            <button type="button" class="third" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Shirley Guevara, con la colaboracion de Alura Latam! 2024.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
